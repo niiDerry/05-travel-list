@@ -5,11 +5,10 @@ import PackingList from "./components/PackingList";
 import Stats from "./components/Stats";
 
 export default function App() {
-  // This state was lifted from the form component
+  // This states was lifted from component
   const [items, setItems] = useState([]);
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
-
   const [sortBy, setSortBy] = useState("input");
 
   function handleAddItems(item) {
